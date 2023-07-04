@@ -45,7 +45,7 @@ echo
 npm -v
 
 npm config set registry https://registry.npmmirror.com
-cd /ql
+cd /qinglong
 pnpm add -g pnpm
 
 pnpm install -g
@@ -56,10 +56,10 @@ pnpm install -g js-base64 qrcode-terminal silly-datetime
 
 pip3 install requests
 
-cd /ql/scripts/ && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && npm i && npm i -S ts-node typescript @types/node date-fns axios png-js canvas --build-from-source
-cd /ql
+cd /qinglong/scripts/ && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && npm i && npm i -S ts-node typescript @types/node date-fns axios png-js canvas --build-from-source
+cd /qinglong
 apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && cd scripts && npm install canvas --build-from-source
-cd /ql
+cd /qinglong
 apk add python3 zlib-dev gcc jpeg-dev python3-dev musl-dev freetype-dev
 
 echo
